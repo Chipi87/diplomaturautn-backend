@@ -78,7 +78,7 @@ app.get("/logout", (req, res) =>{ // si queremos salir que detruya la sesion y v
 });
 
 //ruta para API
-app.use ('/movies', movieRoutes );
+app.use ('/movies', movieRoutes ); // es use porque lo vamos a usar y no es de lectura
 
 app.listen(port, () => {
     console.log(`Usando el puerto http://localhost:${port}/movies`);
