@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+</head>
+<body>
+    <form action="/todos/edit/{{todo.id}}" method="post"> <!--le pasamos la coleccion y el id -->
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" value="{{todo.nombre}}"><br> <!--todo.nombre es el valor a recuperar -->
+
+        <label for="descripcion">Descripcion</label><br>
+        <textarea type="text" name="descripcion" id="descripcion" >{{todo.descripcion}} </textarea><br>
+        
+        <input type="submit" value="guardar">
+
+
+    </form>
+    
+</body>
+</html>
